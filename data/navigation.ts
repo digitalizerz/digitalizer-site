@@ -10,7 +10,10 @@ export const primaryCta = {
   href: "/contact",
 } as const;
 
-export const footerNavigation = navigation;
+export const footerNavigation = [
+  ...navigation,
+  { label: "Website Questionnaire", href: "/website-questionnaire" },
+] as const;
 
 export function isCurrentPath(pathname: string, href: string) {
   return pathname === href || pathname.startsWith(`${href}/`);

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/cn";
 
-type ButtonVariant = "outline" | "outline-ink" | "ghost" | "text";
+type ButtonVariant = "outline" | "outline-ink" | "solid" | "ghost" | "text";
 
 type ButtonProps = {
   href?: string;
@@ -19,6 +19,8 @@ const variants: Record<ButtonVariant, string> = {
     "min-h-11 rounded-full border border-white/80 px-6 text-white transition-colors duration-500 hover:border-white hover:bg-white hover:text-near-black",
   "outline-ink":
     "min-h-11 rounded-full border border-ink px-6 text-ink transition-colors duration-500 hover:bg-ink hover:text-soft-white",
+  solid:
+    "min-h-11 rounded-full bg-ink px-6 text-soft-white transition-colors duration-500 hover:bg-near-black",
   ghost:
     "min-h-11 rounded-full px-1 text-white/80 transition-colors duration-500 hover:text-white",
   text: "min-h-11 text-ink/70 transition-colors duration-500 hover:text-ink",
@@ -62,7 +64,7 @@ export function Button({
   }
 
   return (
-    <button type={type} className={classes} onClick={onClick} {...props}>
+    <button type={type} className={classes} {...props} onClick={onClick}>
       {content}
     </button>
   );
