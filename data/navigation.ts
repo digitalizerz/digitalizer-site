@@ -7,7 +7,7 @@ export const navigation = [
 
 export const primaryCta = {
   label: "Start a Project",
-  href: "/contact",
+  href: "/website-questionnaire",
 } as const;
 
 export const footerNavigation = [

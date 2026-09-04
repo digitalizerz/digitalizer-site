@@ -1,12 +1,8 @@
-import type { Metadata } from "next";
 import { ContactHero } from "@/components/contact/ContactHero";
 import { ContactLocations } from "@/components/contact/ContactLocations";
+import { pages } from "@/data/seo";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description:
-    "Start a project with Digitalizer. Call 1-832-225-2424 or send a note from Baltimore headquarters or the Houston office.",
-};
+export const metadata = pages.contact;
 
 export default function ContactPage() {
   return (

@@ -105,8 +105,8 @@ export function Hero() {
 
           <p className="mt-10 max-w-md text-lg leading-relaxed text-white/68">
             We design, build, and evolve digital solutions that create
-            meaningful impact — human-centered software for a transforming
-            world.
+            meaningful impact — AI-ready websites, custom software, and UX for
+            ambitious teams. Based in Houston and Baltimore, we work nationwide.
           </p>
 
           <div className="mt-12 flex flex-col items-start gap-5 sm:flex-row sm:items-center">

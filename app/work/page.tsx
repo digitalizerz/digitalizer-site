@@ -1,13 +1,9 @@
-import type { Metadata } from "next";
 import { workProjects } from "@/data/projects";
+import { pages } from "@/data/seo";
 import { WorkHero } from "@/components/work/WorkHero";
 import { WorkProject } from "@/components/work/WorkProject";
 
-export const metadata: Metadata = {
-  title: "Our Work",
-  description:
-    "Explore selected Digitalizer work across healthcare, enterprise technology, product strategy, UX and software engineering.",
-};
+export const metadata = pages.work;
 
 export default function WorkPage() {
   return (

@@ -1,13 +1,9 @@
-import type { Metadata } from "next";
 import { CapabilitiesHero } from "@/components/capabilities/CapabilitiesHero";
 import { CapabilitiesIntro } from "@/components/capabilities/CapabilitiesIntro";
 import { CapabilityGrid } from "@/components/capabilities/CapabilityGrid";
+import { pages } from "@/data/seo";
 
-export const metadata: Metadata = {
-  title: "Capabilities",
-  description:
-    "Digitalizer capabilities: experience design, technology and engineering, agile project management, and digital marketing — an end-to-end digital system.",
-};
+export const metadata = pages.capabilities;
 
 export default function CapabilitiesPage() {
   return (

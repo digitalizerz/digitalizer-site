@@ -110,7 +110,11 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="mt-16 border-t border-white/10 pt-6 font-mono text-[0.68rem] uppercase tracking-[0.16em] text-white/35">
+        <p className="mt-16 max-w-3xl text-sm leading-relaxed text-white/40">
+          Houston and Baltimore studio serving clients across the United States —
+          custom software, AI website design, UX, and digital transformation.
+        </p>
+        <p className="mt-6 border-t border-white/10 pt-6 font-mono text-[0.68rem] uppercase tracking-[0.16em] text-white/35">
           © {year} {contact.legalName}. All rights reserved.
         </p>
       </div>
